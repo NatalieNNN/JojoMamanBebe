@@ -1,0 +1,151 @@
+/* B&#233;b&#233; */
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900
+
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body, button{
+    font-family: "Rubik";
+}
+
+button{
+    border-radius:10px;
+    width: 100%;
+    display: block;
+    background-color: burlywood;
+    border-color:burlywood;
+    padding:5px;     
+}
+
+button:hover {
+    background-color:rgb(223, 149, 52) ; /*Orange*/
+  }
+
+a { 
+    color: inherit;
+    text-decoration:none; 
+
+} 
+
+#wrapTable {
+  width: auto;
+  border: 0px solid;
+  display: inline;
+}
+
+.bar{
+    background-color:darkgray;
+    display:inline-;
+    padding: 10;
+    margin-bottom: 10px;     
+}
+
+.topbar{
+    border-radius: 30px 30px 0 0;
+}
+
+.bottombar{
+    border-radius: 0 0 30px 30px;
+}
+
+.ulnav{
+        text-align: right;
+}
+
+.ulnav li{
+    display: inline;
+    color:black;
+    font-size: 12px;
+    font-family: "Rubik"
+    margin: 50px;
+
+}
+
+
+.div_session {
+    background-color: mistyrose;
+    background-image: linear-gradient(mistyrose, white);
+    padding: 5px 20px;
+    margin-bottom: 25px;
+}
+
+.div_figma {
+    background-color: palegoldenrod;
+    background-image: linear-gradient(palegoldenrod, white);
+    padding: 5px 20px;
+    margin-bottom: 25px;
+}
+
+.div_separation {
+    background-color: cornsilk;
+    padding: 5px 20px;
+    margin-bottom: 25px;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+#content-1 {
+  height: 400px;
+  width: auto;
+  border-radius: 1px;
+  border-style: solid;
+}
+
+
+################Why was is it 50%??#############
+.my-col {
+  float: left;
+  width: 50%;
+} 
+
+.responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.profile{
+    border-radius: 100px 100px 0 100px;
+    float:right;
+    margin:10px;
+}
+
+.img_small{
+    border-radius: 30px 0 30px 0px;
+}
+
+.float_right{
+    float:right;
+    margin:10px;
+}
+
+.float_left{
+    float:left;
+    margin:10px;
+}
+
+
+.text_s{
+    color:cadetblue;
+    font-size: 12;
+    margin:0;
+}
+
+.row {
+    display: flex;
+    align-items: center;     /* vertical centering   */
+    justify-content: center; /* horizontal centering */
+}
+
+.screenshot{
+    width:auto;
+    height:300px;
+}
