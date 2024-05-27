@@ -1,64 +1,450 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Title</title>
+        <title>Webdesign review</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
-        
-        <!---- boostrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     
-    </head>
-    <body>
-        <!---- boostrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         
-       <div class="bar topbar">
-            <ul class="ulnav">
-                <li>│About Me│</li>
-                <li>Profolio│</li>
+    </head>
+    
+    <body>
+        
+<!-- Header --> 
+<!-- good to add hover / button / UX / UI-->
+        <header>
+            <div class="bar topbar">
+                <ul class="ulnav">
+                    <li>About</li>                
+                    <li>Projects</li>
+                </ul>
+            </div>
+        <header>    
+<!--mobile website review-->
+        <div class="div_session">
+            <img src="image/jjmmbb.png" width=15% height= auto class="float_right">
+            <h2>JoJo Maman B&#233;b&#233; mobile website review</h2>
+            
+            <p> Company background: The baby clothing and maternity wear retailer JoJo Maman B&#233;b&#233; whose high-profile customers include the Duchess of Cambridge has been snapped up by the high street company Next and a group of investment firms.</p>
+            
+            <p>My duties:</p>
+            <ul>
+                <li>To improve online shopping experience</li>
+                <li>To conduct user research to find out user's pain points</li>
+                <li>To improve UI to meet users' expectations</li>
+                <li>To conduct A/B testings</li>
             </ul>
+
+            <p>Tool: Figma </p>
+            
+            <P>Period: 2 weeks</P>
+            
         </div>
         
+<!--Design process-->
         <div>
-        <img src="image/nat_snow.jpg" width = 35% height = auto class="profile">
-        <h2>Hello! I am Natalie.</h2>
-        <h3>A junior UX designer based in London.</h3>
-        <p>My experience in owning a kids activity centre and an event company required me lots of planning and design work. It greatly empowers me to switch from a business owner to a UX designer.
-        </p>
+            <img src="image\DesignProcess3.png" class="responsive">
+       </div>
+        <br>
+        
+<!--Design review, competitor research -->     
+        <div class="div_session">            
+            <img src=image/mobile_hnm.png width=15% height= auto class="float_right">
+            <img src=image/mobile_jjmmbb.png width=15% height= auto class="float_right">
+            <img src=image/mobile_ppp.png width=15% height= auto  class="float_right"><h3>Design Review</h3> 
+            <p>Then I compared JoJo Maman B&#233;b&#233;'s mobile web to other competitors' mobile websites including H&M and Popopie. I studied it in details but it still took me some time to find some common features or details.</p>           
+        </div>
+
+<!---------------- working Y & N --> 
+        <div style="margin:0">
+             <table id="wrapTable"> 
+                     <tr>
+                        <th>Areas working good[Y]</th>
+                        <th>Areas need improvement[N]</th>
+                     </tr>
+                     <tr>
+                        <td>[Y1] Plain style give consistence</td>
+                        <td>[N1] Hidden favourite list
+                            <br><p class="text_s">I hit the heart-shaped button for some products. But I couldn't find where the list is.</p></td>
+                     </tr>
+                    <tr>
+                        <td>[Y2] Search Bar allows people direct search 
+                       </td>
+                        <td>[N2] Hidden locator <br><p class="text_s">I wanted to see if there is any shop near my home. I couldn't find the locator easily.)</p></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>[Y3] Mutibuy category shows all great offers available in one page and Multibuy labels show on related products. Attractive and useful.</td>
+                        <td>[N3] Inefficient map searching function
+                            <br><p class="text_s">When I used the map locator, no matter I input area name or postcode, it showed the whole UK map, instead of a map of the nearest branch. I had to keep zooming in to get to a store details.</p></td>
+                    </tr>
+                    <tr>
+                        <td>[Y4] Clearance category and the items on sale are in red. Able to draw user's attention</td>
+                        <td>[N4] Hard to find details of delivery and return policies
+                            <br><p class="text_s">Very hard to find the retun policy. When I used the search bar to find it, the first result was outdated to show extra charge per item. But the updated one should be free of charge if returning to any store. Same to delivery option, I couldn't find any delivery details, not until I register an account and proceed to payment and choose free store pick-up or home delivery with charge. </p></td>
+                    </tr>
+                    <tr>
+                        <td>[Y5] Instant thumbnail preview of different style of same products.</td>
+                        <td>[N5] Confusing stock level
+                            <br><p class="text_s">Some products listed "in stock", some listed "delievered in within 3 days" , some didn't show any stock level, confusing me how many days would really take.</p></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>[N6] Hard to see the 10% off offer both on the top and bottom of the page.
+                        <br></td>
+                    </tr>                
+            </table>
+        </div>
+        
+
+<!---------------- Hypothese H&S --> 
+        <div class="div_session">
+            <h3>Hypotheses and suggestions </h3>
+            <p>Then I made hypothese and solutions based on the problems N1 to N6.</p>
+        </div>
+<!---------------- Hypothese H1-6&S1-6 -->        
+        <div>
+            <table id="wrapTable"> 
+                    <tr>
+                        <th>Hypotheses[H]</th>
+                        <th>Suggestions[S]</th>                   
+                    </tr>
+                    <tr>
+                        <td>[H1] Unhidding the favourites icon would make people easier to check the list again</td>
+                        <td>[S1] Adding a favourite icon on the top bar</td>
+                    </tr>
+                    <tr>
+                        <td>[H2] Unhidding the locator icon would make people easier to find the store</td>
+                        <td>[S2] Adding a locator icon on the top bar</td>
+                    </tr>
+                    <tr>
+                        <td>[H3] Simplying the map searching function would make people easier to find the store </td>
+                        <td>[S3] Getting more accurate location to would prevent people keep zooming into the map</td>
+                    </tr>
+                    <tr>
+                        <td>[H4] Providing details of delivery and return policies would promote higher conversion rate</td>
+                        <td>[S4] Adding the delivery and the return policies on each product page</td>
+                    </tr>
+                    <tr>
+                        <td>[H5] Providing clear stock level could avoid confusion or misunderstanding of delivery time</td>
+                        <td>[S5] Using a clear stock level indicators</td>
+                    </tr>
+                    <tr>
+                        <td>[H6] A more eye-catching 10% off offer could increase conversion rate </td>
+                        <td>[S6] Enlarging the flashing banner on top and shortening the footer to enhance the exposure of the email subscription box </td>
+                    </tr>
+            </table>
+        </div>
+
+<!-- User Research (Zoom) --> 
+        <div class="div_session">
+            <img src="image/zoom.jpg" width=40% height=auto class="float_right">
+            <h3>User Research (Zoom Interview) </h3>     
+            <p>I interviewed 3 people from my classmates, aged 20 to 35 years old. They never hear about this company. To make my research closer to the company's target audience, I interviewed 3 more people, who are mothers with children and frequent users of online shopping. They are aged 30 to 40 years old.</p>
+        </div>
+
+<!-- --------------(Qs&results) --> 
+        <div>            
+            <p>Below are the questions I asked the interviewees.
+            <ol>
+                <li>Is it easy for you to check product details, materials3 and care guide?</li>
+                <li>You are interested in some products.</li>
+                <li>Is it easy for you to find the heart shape icon to add into your favourite list?</li>
+                <li>Is it also easy for you to look at which items you added to your favourite list?</li>
+                <li>Is it easy to know the stock availability for particular age or size?</li>
+                <li>Is it easy to know the delivery date and return policy?</li>
+                <li>If I add these delivery day & return policy on every product, like most of popular online shop do, would it increase your chance to buy?</li>
+                <li>It is your first time to visit the web. Is it easy for get the 10% discount code?Where can you find it?</li>
+                <li>How do you think the homepage?Is it simple? or repetitive? Is the page length fine or too long?</li>
+                <li>If you choose to delivery to the shop, you dont need to pay extra. Is it easy for you to find the nearest shop?</li> 
+                <li>Do you use the map locator or the list locator?</li>
+            </ol>
+            <div class="row">
+            <img src="image/test1.png" width="48%" height="auto">
+            <img src="image/test2.png" width="48%" height="auto">
+            </div>   
+                       
+        </div>
+        
+<!---------------- (Online review) -->      
+        <div class="div_session">
+            <h3>User Research (Online review) </h3>
+            <img src=image/reviews.png class="responsive">
+            <p>I also did some online user research by seeing user reviews on various platforms. I picked recent reviews from Trustpilot and Google Reviews, and paid extra attention to those 1-star and 2-star reviews.</p>
+        </div>
+<!---------------- (problems) -->           
+        <div>
+            <p>The main problem is poor customer service. Many customers encountered very unpleasant experiences. It sounds like a business problem rather than UX/UI problem. But why did the customers need to contact customer service?
+                Here are the three most common problems.</p>
+                <ol>
+                    <li>Unexpectedly long delivery time</li>
+                    <li>Order partially cancelled after payment due to lack of stock</li>
+                    <li>Return or exchange items</li>
+                </ol>
+         </div>
+<!---------------- (Online review) -->      
+        <div class="div_session">
+            <h3>More hypotheses and suggestions</h3>   
+            <p> Based on the three problems above, I made the following hypotheses and suggestions.</p>
+        </div>
+<!---------------- (H7-H9,S7-S9) -->          
+        <div>
+                <table id="wrapTable"> 
+                    <tr>
+                        <th>Hypotheses[H]</th>
+                        <th>Suggestions[S]</th>                   
+                    </tr>
+                    <tr>
+                        <td>[H7] Providing a delivery details could help to minimise unexpected waiting time</td>
+                        <td>[S7] Adding delivery details on each product page (matching S4) </td>
+                    </tr>
+                    <tr>
+                        <td>[H8] Displaying correct stock level could avoid understock</td>
+                        <td>[S8] Changing the stock indicator to display correct stock level (matching S5)</td>
+                    </tr>
+                    <tr>
+                        <td>[H9] Listing clearly about the return and exchange policy</td>
+                        <td>[S9] Adding return policy on each product page (matching S4) </td>
+                    </tr>
+                </table>
+        </div>
+        <br>
+
+<!--UI improvement--> 
+        <div class=div_figma>
+           <img src="image/designsteps.png" width=40% height=auto class="float_right">
+           <h3>UI improvement</h3> 
+            
+            <p>I followed these three steps to make UI improvement.</p>
+            <br><br><br><br><br><br><br><br><br><br>
+
+        </div>
+                
+<!-- -------Content design & wireframing-->
+        <div class=div_figma>
+         <img src="image/wireframing.jpg" width=40% height=auto class="float_right">
+         
+         <h3>Content design and wireframing</h3>
+            
+            <p>First, based on my suggestions, I focused five areas to modify the design. And I drafted the content design and wireframes by handwriting.</p>
+                <ol>
+                    <li>Favourites</li>
+                    <li>Stock level</li>
+                    <li>Delivery and return policies </li>
+                    <li>10% off promotion</li>
+                    <li>Locator</li>
+                </ol>     
+            <br>  <br>    
+        </div>        
+       
+        <br>
+
+<!-- -------Visual design-->        
+        <div class="div_figma">
+            <img src="image/beforeafter2.jpg" width=25% height=auto class="float_right">
+            <img src="image/visual design 2.png" width=40% height=auto class="float_right">
+        
+
+            <h3>Visual design</h3>
+            <p>Second, I used the content to create components and made the before-and-after frames.</p>
+            <br><br><br><br>
+        </div>
+        
+<!-- ---------before & after UI-->      
+        <div> 
+            <div class="div_separation">     
+             <table id="wrapTable">
+                <tr>
+                    <th>Before</th>
+                    <th>After</th>                   
+                </tr>
+                    
+                <tr >
+                    <td >
+                        <img src="image/Before_favourites.png" class="screenshot">
+                        <img src="image/Before_locator.png" class="screenshot">
+                    </td>
+                    
+                    <td><img src="image/After_favourites.png" class="screenshot">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="https://www.figma.com/proto/9xb9Ugzssx3L2pd7NEBQUF/The-School-of-UX-Cohort-8-Portfolio-exercise?type=design&node-id=4505-2037&t=MV3qBtGSAs1jqYNW-9&scaling=min-zoom&starting-point-node-id=4505%3A2037&show-proto-sidebar=1" target="_blank"><button>view original prototype</button></a>
+                    </td>
+
+                    <td>
+                        <a href="https://www.figma.com/proto/9xb9Ugzssx3L2pd7NEBQUF/The-School-of-UX-Cohort-8-Portfolio-exercise?type=design&node-id=4505-2072&t=MV3qBtGSAs1jqYNW-9&scaling=min-zoom&starting-point-node-id=4505%3A2072&show-proto-sidebar=1" target="_blank"><button>view new prototype</button></a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>(1) Favourites and (5)locator are hidden in the vertical collapsed menu.</td>
+                    <td>(1) Favourites and (5) locator are added to the navigation bar. </td>
+                </tr>
+            
+                <tr>
+                    <td>(4) 10% off first order is displaying in a flashing banner under navigation bar</td>
+                    <td>(4) The flashing banner is enlarged by double height. And texts are simplified. </td>
+                </tr>
+            </table>
+            </div>
+            
+            <div class="div_separation">
+              <table id="wrapTable">
+                <tr>
+                    <th>Before</th>
+                    <th>After</th>
+                </tr>
+
+                <tr>
+                    <td><img src="image\Before_map.png" class="screenshot"></td>
+                    <td><img src="image\After_map.png" class="screenshot"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="https://www.figma.com/proto/9xb9Ugzssx3L2pd7NEBQUF/The-School-of-UX-Cohort-8-Portfolio-exercise?type=design&node-id=3565-722&t=YAyxQ0ApNurjc5xV-0&scaling=min-zoom&starting-point-node-id=4402%3A2387&show-proto-sidebar=1" target="_blank"><button>view original prototype</button></a>
+                    </td>
+
+                    <td>
+                        <a href="https://www.figma.com/proto/9xb9Ugzssx3L2pd7NEBQUF/The-School-of-UX-Cohort-8-Portfolio-exercise?type=design&node-id=3565-722&t=YAyxQ0ApNurjc5xV-0&scaling=min-zoom&starting-point-node-id=4402%3A3687&show-proto-sidebar=1" target="_blank"><button>view new prototype</button></a>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    <td>Search result shows the general UK map, even after inputting town name or postcode. Users need to keep zooming four to five times to find a store. </td>
+                    <td>Search result shows a more accurate nearby store, showing clearer shop details. And a get-direction sign is added to the map if they need a detailed route.</td>
+                </tr>
+              </table>
+            </div>
+
+
+            <div class="div_separation">
+             <table id="wrapTable">
+                <tr>
+                    <th>Before</th>
+                    <th>After</th>
+                 </tr>
+
+                <tr>           
+                    <td>
+                        <img src="image/Before_email.png" width=auto height=600px>
+                    </td>
+                    <td>
+                        <img src="image/After_email.png" class="screenshot">
+                    </td>
+                </tr> 
+                
+                <tr>
+                    <td>
+                        <a href="https://www.figma.com/proto/9xb9Ugzssx3L2pd7NEBQUF/The-School-of-UX-Cohort-8-Portfolio-exercise?type=design&node-id=3565-722&t=YAyxQ0ApNurjc5xV-0&scaling=min-zoom&starting-point-node-id=4402%3A2135&show-proto-sidebar=1" target="_blank"><button>view original prototype</button></a>
+                    </td>
+
+                    <td>
+                        <a href="https://www.figma.com/proto/9xb9Ugzssx3L2pd7NEBQUF/The-School-of-UX-Cohort-8-Portfolio-exercise?type=design&node-id=3565-722&t=YAyxQ0ApNurjc5xV-0&scaling=min-zoom&starting-point-node-id=4307%3A1596&show-proto-sidebar=1" target="_blank"><button>view new prototype</button></a>
+                    </td>
+
+                </tr>
+
+
+                 <tr> 
+                     <td>(4) The email subscription box at the bottom is not seen at the last screen shot, but at the last 2 screen shots.</td>
+                     
+                     <td> (4) The footer is shortened, so the email subscription box is clearly seen at the last screen shot.</td>
+                 </tr>
+            </table>
+            </div>
+            
+        <div class="div_separation">
+            <table id="wrapTable">
+            <tr>
+                <th>Before</th>
+                <th>After</th>
+            </tr>
+            
+            <tr>
+                <td>
+                    <img src="image/Before_stock.png" class="screenshot">
+                    <img src="image/Before_stock2.png" class="screenshot">
+                </td>
+                <td>
+                    <img src="image/After_stock.png" class="screenshot">
+                    <img src="image/After_stock2.png" class="screenshot">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://www.figma.com/proto/9xb9Ugzssx3L2pd7NEBQUF/The-School-of-UX-Cohort-8-Portfolio-exercise?type=design&node-id=3565-722&t=YAyxQ0ApNurjc5xV-0&scaling=min-zoom&starting-point-node-id=4402%3A10789&show-proto-sidebar=1" target="_blank"><button>view original prototype</button></a>
+                </td>
+
+                <td>
+                    <a href="https://www.figma.com/proto/9xb9Ugzssx3L2pd7NEBQUF/The-School-of-UX-Cohort-8-Portfolio-exercise?type=design&node-id=4402-10947&t=uCde4N46npHtwFMd-9&scaling=min-zoom&starting-point-node-id=4402%3A10947&show-proto-sidebar=1" target="_blank"><button>view new prototype</button></a>
+                </td>
+
+            
+        
+            <tr>
+                <td>(2) The "In Stock" and "Delivered within 3 days" are confusing.
+                </td>
+                <td>(2) Stock levels change to "Available" and "Few left"
+                </td>
+            </tr> 
+            
+            <tr>
+                 <td>(3) No information about delivery and return.
+                </td>
+                <td>(3) Information about delivery and return is added to the product page.
+                </td>
+            </tr>
+            </table>
+        </div>
         </div>
         <br>
         
-        <div>
-        <img src="image/kicking horse.jpg" width = 20% height = auto class="img_small">
-        <img src="image/golf.jpg" width = 20% height = auto class="img_small">
-        <img src="image/bike.jpg" width = 20% height = auto class="img_small">
+<!-- Prototyping-->
+        <div class="div_figma">
+            <img src="image/prototyping.png" width=30% height=auto class="float_right">
+            <h3>Prototyping</h3>
+            <p>Third, I did the prototyping after design. When I found something went wrong, then I went back to design and did the prototyping again. Step 2 and step 3 went back and forth.</p>
+            <br><br><br><br><br>
+        </div>
+        
+        <br>
+        
+<!-- User testing-->        
+        <div class="div_session">
+        <h3>User testing</h3>
+            <p>After the UI improvement, I continued the design process to A/B testing using google form and received 21 responses in 48 hours.</p>
+        </div>
+        <img src="image/abtesting.jpg" class="responsive">
+        <br>
+<!-- Conclusion-->          
+        <div class="div_session">
+        <h3>Conclusion</h3>
+            <p> Problems N1(Favourites), N2(Locator), N3(Map searching) are solved with UI improvement. </p>
+ 
+            <p>Problem N4(Delivery and Return) is a problem agreed by the interviewees but the improved UI was not accepted. Some interviewees said the delivery and return information is needed but the labels in improved UI could be displayed in smaller lines or smaller labels. This problem could affect the conversion rate. With more time in future, this problem might be solved by taking H&M and  Popopie as reference.</p>
 
-        <p>I shut down my business during Covid and had a gap year in Canada. I learnt snowboarding and managed to ride the top routes in just three months.The scenic views in the Rockie Mountains kept me stay longer to play golf and cycling around.
-        </p>
+            <p>Problem N5(Stock level) is found from online user reviews but not agreed by the real-person interviwees. But the problem could affect the business profit in the long run. This improved UI was not accepted in A/B testing. With more time in future, this problem might be solved by taking Decathalon's stock indicator as reference. </p>
         </div>
-        
-        
-        <div>       
-        <img src="image/PS.png" width=auto height = 60>
-        <img src="image/figma.png" width=auto height = 60>
-        <img src="image/Python2.png" width=100 height = auto>
-        <img src="image/blender2.png" width=auto height = 60>
-        <img src="image/html.png" width=auto height = 60>
-        <img src="image/css.png" width=auto height = 60>
-        <img src="image/wix.png" width=auto height = 60>
-        <br>           
-        <p>I used Photoshop and wix a lot for my business before. During my gap year in Canada, I started learning Python, Blender, HTML & CSS. Recently I took a UX bootcamp and learnt Figma.
-        </p>
-        </div>
-        
-        <div>
-        <h3>My projects</h3>
-            Jojo Maman bebe
-            <br>Miles and Miles
-            <br>Sainsbury
-            <br>UX Conf
-            
-        </div>
-    </body>
+    
+ <!---footer-->
+ <!--Default font stilll not yet CHANGE-->
+ <!--footer left / footer right-->
+        <footer>
+            <div class="bar bottombar textcenter">
+                Natalie Ng - All rights reserved.
+                <br>Email: natalie1120uk@gmail.com      
+            </div>
+        </footer>
+    </body>  
 </html>
